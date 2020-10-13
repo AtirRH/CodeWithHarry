@@ -24,9 +24,11 @@
     </div>
     <div>
       <form action="website.html" method="get">
-        <div class="form-control">
+        <div>
+          <h1>
           <label for="t">Choose Your theme</label>
-          <select name="t" id="t">
+          </h1>
+          <select class="form-control" name="t" id="t">
             <option value="cerulean">Cerulean</option>
             <option value="cosmo">Cosmo</option>
             <option value="cyborg">Cyborg</option>
@@ -49,13 +51,15 @@
             <option value="united">United</option>
             <option value="yeti">Yeti</option>
           </select>
-        </div>
         <button type="submit" class="btn btn-primary block my-2">Go</button>
+        </div>
 
       </form>
     </div>
+  </div>
 
-    <ul>
+  <div class="container-fluid">
+    <ul id="theme-list">
       <h1>All theme list</h1>
       <li>Cerulean</li>
       <li>Cosmo</li>
@@ -81,11 +85,17 @@
       <li>Yeti</li>
 
     </ul>
-
-
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <style>
+    /* #theme-list li{
+      text-align: left;
+    } */
+    .container-fluid{
+      padding-left: 120px;
+    }
+  </style>
 </body>
 </html>
